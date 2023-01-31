@@ -1,0 +1,149 @@
+
+/* Rituais Conhecidos */
+
+.elementos{
+    position: relative;
+    height: 20px;
+    width: auto;
+    margin: 0px 0px 2px 5px;
+    display: flex;
+}
+
+.btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    border-radius: 5px;
+    background: black;
+    border-color: black;
+}
+
+.rituais{
+    top: 110px;
+    left: 69px;
+    width: 617px;
+    height: 702px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.addRituais{
+    top: 78px;
+    left: 650px;
+}
+
+.ritual{
+    width: 99%;
+    height: auto;
+    margin: 2px 0px 5px;
+    border-bottom: 1.5px solid;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.addRituais:hover {filter: invert(1);}
+
+.escRituais{
+    top: -5px;
+    right: 7px;
+    filter: invert(1);
+}
+
+.escRituais:hover {filter: none;}
+
+.ritualName{
+    position: relative;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+}
+
+.ritualLabel{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 10px);
+    margin-left: 10px;
+    height: 16px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.ritualInput{
+    position: relative;
+    width: calc(100% - 5px);
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.ritualDescri{
+    position: relative;
+    font-size: 10px;
+    margin: 3px 5px 5px 10px;
+    max-width: 595px;
+    min-height: 66px;
+}
+
+.elemento{
+    margin: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+.elemento:hover{ 
+    filter: blur(0px);
+    opacity: 0.7;
+}
+
+.elementoInativo{
+    filter: blur(1px);
+    opacity: 0.2;
+}
+
+.eMorte{
+    background: black;
+}
+
+.eSamgue{
+    background: #b1161a;
+}
+
+.eEnergia{
+    background: #9a00fd;
+}
+
+.eConhecimento{
+    background: #bf9100;
+}
+
+.eMedo{
+    color: #bf9100;
+    border: 2px solid #bf9100;
+    height: calc(100% - 4px);
+}
+
+/* Historia */
+.historia{
+    top: 850px;
+    left: 64px;
+    width: 610px;
+    height: 215px;
+}

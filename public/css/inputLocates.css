@@ -1,0 +1,423 @@
+
+
+/* Nome do Criador */
+.namePlayer{
+    top: 47px;
+    left: 335px;
+    width: 105px;
+    border: none;
+}
+
+
+/* Dados do Personagem */
+.namePJ{
+    top: 39px;
+    left: 98px;
+    width: 222px;
+    height: 24px;
+    font-family: tituloName;
+    text-align: center;
+    font-size: 19px;
+}
+
+.origem{
+    top: 471px;
+    left: 184px;
+    height: 20px;
+    width: 257px;
+}
+
+.nex{
+    top: 568px;
+    left: 141px;
+    height: 34px;
+    width: 33px;
+    font-size: 20px;
+    text-align: end;
+    padding-right: 3px;
+}
+
+.maxNex{
+    top: 568px;
+    left: 204px;
+    height: 34px;
+    width: 50px;
+    font-size: 20px;
+    text-align: end;
+    padding-right: 3px;
+}
+
+.classe{
+    top: 523px;
+    left: 173px;
+    height: 20px;
+    width: 268px;
+}
+
+.desl{
+    top: 568px;
+    left: 332px;
+    height: 35px;
+    width: 106px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+
+/* Atributos */
+.agi{
+    top: 130px;
+    left: 249px;
+    width: 50px;
+    height: 56px;
+    font-size: 35px;
+}
+
+.for{
+    top: 202px;
+    left: 141px;
+    width: 50px;
+    height: 56px;
+    font-size: 35px;
+}
+
+.int{
+    top: 202px;
+    left: 358px;
+    width: 50px;
+    height: 56px;
+    font-size: 35px;
+}
+
+.pre{
+    top: 332px;
+    left: 172px;
+    width: 50px;
+    height: 56px;
+    font-size: 35px;
+}
+
+.vig{
+    top: 333px;
+    left: 327px;
+    width: 50px;
+    height: 56px;
+    font-size: 35px;
+}
+
+
+/* SaÃºde */
+.pv{
+    top: 627px;
+    left: 114px;
+    width: 52px;
+    height: 42px;
+    font-size: 30px;
+}
+
+.san{
+    top: 725px;
+    left: 329px;
+    width: 59px;
+    height: 42px;
+    font-size: 30px;
+}
+
+.pe{
+    top: 627px;
+    left: 291px;
+    width: 49px;
+    height: 42px;
+    font-size: 30px;
+}
+
+.pvSofrido{
+    top: 674px;
+    left: 134px;
+    width: 109px;
+    height: 24px;
+    text-align: left !important;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.peGasto{
+    top: 773px;
+    left: 351px;
+    width: 87px;
+    height: 24px;
+    text-align: left !important;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.sanPerdida{
+    top: 674px;
+    left: 311px;
+    width: 127px;
+    height: 24px;
+    text-align: left !important;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+
+/* Defesas */
+.passiva{
+    top: 723px;
+    left: 108px;
+    width: 60px;
+    height: 61px;
+    font-size: 26px;
+}
+
+.equipDefesas{
+    top: 765px;
+    left: 239px;
+    width: 24px;
+    height: 12px;
+    font-size: 13px;
+}
+
+.outrosDefesas{
+    top: 765px;
+    left: 273px;
+    width: 24px;
+    height: 12px;
+    font-size: 13px;
+}
+
+.protecao{
+    top: 811px;
+    left: 161px;
+    width: 282px;
+    height: 12px;
+    font-size: 13px;
+}
+
+.resistencias{
+    top: 835px;
+    left: 180px;
+    width: 263px;
+    height: 12px;
+    font-size: 13px;
+}
+
+
+/* Resistencias a Dano */
+.fisica{
+    top: 803px;
+    left: 364px;
+    width: 43px;
+    height: 31px;
+    font-size: 25px;
+}
+
+.balistica{
+    top: 803px;
+    left: 416px;
+    width: 43px;
+    height: 31px;
+    font-size: 25px;
+}
+
+.insan{
+    top: 856px;
+    left: 202px;
+    width: 42px;
+    height: 31px;
+    font-size: 25px;
+}
+
+.sangue{
+    top: 857px;
+    left: 261px;
+    width: 44px;
+    height: 31px;
+    font-size: 25px;
+}
+
+.morte{
+    top: 857px;
+    left: 313px;
+    width: 44px;
+    height: 31px;
+    font-size: 25px;
+}
+
+.energia{
+    top: 857px;
+    left: 365px;
+    width: 44px;
+    height: 31px;
+    font-size: 25px;
+}
+
+.conhecimento{
+    top: 857px;
+    left: 417px;
+    width: 44px;
+    height: 31px;
+    font-size: 25px;
+}
+
+/* Pericias */
+.acrobacia{top: 208px;left: 635px;width: 24px;height: 18px;}
+
+.adestramento{top: 231px;left: 635px;width: 24px;height: 18px;}
+
+.artes{top: 253px;left: 635px;width: 24px;height: 18px;}
+
+.atletismo{top: 275px;left: 635px;width: 24px;height: 18px;}
+
+.atualidades{top: 298px;left: 635px;width: 24px;height: 18px;}
+
+.ciencia{top: 320px;left: 635px;width: 24px;height: 18px;}
+
+.crime{top: 343px;left: 635px;width: 24px;height: 18px;}
+
+.diplomacia{top: 365px;left: 635px;width: 24px;height: 18px;}
+
+.enganacao{top: 388px;left: 635px;width: 24px;height: 18px;}
+
+.futitude{top: 410px;left: 635px;width: 24px;height: 18px;}
+
+.fortividade{top: 433px;left: 635px;width: 24px;height: 18px;}
+
+.iniciativa{top: 455px;left: 635px;width: 24px;height: 18px;}
+
+.intimidacao{top: 478px;left: 635px;width: 24px;height: 18px;}
+
+.intuicao{top: 500px;left: 635px;width: 24px;height: 18px;}
+
+.invetigacao{top: 522px;left: 635px;width: 24px;height: 18px;}
+
+.luta{top: 544px;left: 635px;width: 24px;height: 18px;}
+
+.meidicina{top: 567px;left: 635px;width: 24px;height: 18px;}
+
+.ocultismo{top: 590px;left: 635px;width: 24px;height: 18px;}
+
+.percepcao{top: 612px;left: 635px;width: 24px;height: 18px;}
+
+.pilotagem{top: 635px;left: 635px;width: 24px;height: 18px;}
+
+.pontaria{top: 658px;left: 635px;width: 24px;height: 18px;}
+
+.prestiditacao{top: 720px;left: 791px;width: 24px;height: 18px;}
+
+.profissao{top: 679px;left: 635px;width: 24px;height: 18px;}
+
+.reflexos{top: 702px;left: 635px;width: 24px;height: 18px;}
+
+.religiao{top: 724px;left: 635px;width: 24px;height: 18px;}
+
+.sobrevivencia{top: 747px;left: 635px;width: 24px;height: 18px;}
+
+.tatica{top: 769px;left: 635px;width: 24px;height: 18px;}
+
+.tecnologia{top: 792px;left: 635px;width: 24px;height: 18px;}
+
+.vontade{top: 814px;left: 635px;width: 24px;height: 18px;}
+
+
+/* Armas */
+.arma{
+    top: 1px;
+    left: 1px;
+    width: 218px;
+    height: 18px;
+}
+
+.tipo{
+    top: 1px;
+    left: 102px;
+    width: 113px;
+    height: 18px;
+}
+
+.ataque{
+    top: 1px;
+    left: 230px;
+    width: 44px;
+    height: 18px;
+    text-align: center;
+}
+
+.alcance{
+    top: 1px;
+    left: 286px;
+    width: 92px;
+    height: 18px;
+    text-align: center;
+}
+
+.dano{
+    top: 1px;
+    left: 390px;
+    width: 72px;
+    height: 18px;
+    text-align: center;
+}
+
+.critica{
+    top: 1px;
+    left: 476px;
+    width: 77px;
+    height: 18px;
+    text-align: center;
+}
+
+.recarga{
+    top: 1px;
+    left: 482px;
+    width: 49px;
+    height: 18px;
+    text-align: center;
+}
+
+.especial{
+    top: 1px;
+    left: 566px;
+    width: 94px;
+    height: 18px;
+    text-align: center;
+}
+
+.line1{
+    position: absolute;
+    top: 917px;
+    left: 94px;
+    width: 665px;
+    height: 20px;
+}
+
+.line2{
+    position: absolute;
+    top: 937px;
+    left: 94px;
+    width: 608px;
+    height: 20px;
+}
+
+.line3{
+    position: absolute;
+    top: 957px;
+    left: 94px;
+    width: 608px;
+    height: 20px;
+}
+
+.line4{
+    position: absolute;
+    top: 977px;
+    left: 94px;
+    width: 608px;
+    height: 20px;
+}
+
+.line5{
+    position: absolute;
+    top: 997px;
+    left: 94px;
+    width: 608px;
+    height: 20px;
+}

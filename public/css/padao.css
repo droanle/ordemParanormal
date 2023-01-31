@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap');
+
+@font-face {
+    font-family: tituloName;
+    src: url(../fonts/BygonestRusticRegular.ttf)
+}
+@font-face {
+    font-family: texto;
+    src: url(../fonts/LuckyTypewriter.ttf)
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #010001;
+    color: #f1f1f1;
+    font-family: 'tituloName', serif;
+    font-size: 16px;
+}
+
+ ::-webkit-scrollbar-track {
+    margin-top: 10%;
+    background-color: transparent;
+}
+
+ ::-webkit-scrollbar {
+    width: 5px;
+    height: 90%;
+    background: black;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #aa0e0e;
+    border-radius: 10px;
+}
+
+iframe {
+    border: none;
+}
+
+.uppercaseText {
+    text-transform: uppercase;
+}
+
+.marcaVermelhaTexto {
+    color: #de0e0e;
+}
+
+
+/* -------botão------- */
+
+.botao {
+    width: 22px;
+    height: 22px;
+    padding: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.botao:hover {
+    opacity: 1;
+}
+
+.editar {
+    border: 1px solid #ffffff87;
+}
+
+.editar:hover {
+    background-color: #ffffff3d;
+}
+
+.question {
+    border: 1px solid #ffcc1c8c;
+    background-color: #000000d9;
+}
+
+.question:hover {
+    background-color: #332800;
+}
+
+.return {
+    border: 1px solid #ff1c1c8c;
+    background-color: #000000d9;
+}
+
+.return:hover {
+    background-color: #330000;
+}
+
+
+/* ---------voltar---------- */
+
+.voltar {
+    position: fixed;
+    left: 10px;
+    bottom: 5px;
+}
+
+.voltar .return {
+    width: 25px;
+    height: 25px;
+}
+
+.voltar:hover .return {
+    background-color: #330000;
+}
+
+.fotoPerso {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-color: #ffffff87;
+    border-width: 1.3px;
+    border-style: solid;
+    box-shadow: 0px 0px 27px #000 inset;
+    width: 150px;
+    height: 150px;
+}
+
+.fotoPerso img {
+    position: absolute;
+    width: 100%;
+}

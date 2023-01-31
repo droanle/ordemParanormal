@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/ficha.css">
+    <link rel="stylesheet" href="css/inputLocates.css">
+    <link rel="stylesheet" href="css/inputLocatesForInfos.css">
+    <link rel="stylesheet" href="css/inputLocatesForRituais.css">
+    <!-- address -->
+    <link rel="icon" href="img/icon_rpg2.png" tipo="imagem/x-ícone">
+    <!-- script -->
+    <script type="text/javascript" src="/js/script.js"></script>
+  </head>
+  <body>
+    <div id="nav" ondblclick="sumariOpacity()">
+        <div id="seta">
+            <img id="setaimg" onclick="sumari()" ondblclick="sumariOpacity()" src="img/seta.png" alt="seta">
+        </div>
+        <div id="links">
+            <a href="#page1">Página 1</a>
+            <span><a href="#Atributos">Atributos</a></span>
+            <span><a href="#Saude">Saúde</a></span>
+            <span><a href="#Armas">Armas</a></span>
+            <a href="#page2">Página 2</a>
+            <span><a href="#Proficiencias">Proficiências</a></span>
+            <span><a href="#Habilidades">Habilidades</a></span>
+            <span><a href="#Inventario">Inventário</a></span>
+            <span><a href="#Notas">Notas</a></span>
+            <a href="#page3">Página 3</a>
+            <span><a href="#Riruais">Riruais</a></span>
+            <span><a href="#Historia">História</a></span>
+        </div>
+    </div>
+    <div id="page1" class="ficha">
+      <img src="./img/Ficha.png" alt="Layout da Ficha - Pagina 1" id="fichaLayout">
+      <!-- Nome do Criador -->
+      <input onchange="chargeValue(this)" type="text" name="namePlayer" class="defaultInput namePlayer" maxlength="25">
+
+      <!-- Dados do Personagem -->
+      <input onchange="chargeValue(this)" type="text" name="namePJ" class="defaultInput namePJ" maxlength="20">
+      <input onchange="chargeValue(this)" type="text" name="origem" class="defaultInput origem" maxlength="16">
+      <input onchange="chargeValue(this)" type="text" name="nex" class="defaultInput nex" maxlength="15">
+      <input onchange="chargeValue(this)" type="text" name="maxNex" class="defaultInput maxNex" maxlength="15">
+      <input onchange="chargeValue(this)" type="text" name="classe" class="defaultInput classe" maxlength="15">
+      <input onchange="chargeValue(this)" type="text" name="desl" class="defaultInput desl" maxlength="15">
+
+      <!-- Atributos -->
+      <span id="Atributos"></span>
+      <input onchange="chargeValue(this)" type="number" value="0" name="agi" class="defaultInput agi">
+      <input onchange="chargeValue(this)" type="number" value="0" name="for" class="defaultInput for">
+      <input onchange="chargeValue(this)" type="number" value="0" name="int" class="defaultInput int">
+      <input onchange="chargeValue(this)" type="number" value="0" name="pre" class="defaultInput pre">
+      <input onchange="chargeValue(this)" type="number" value="0" name="vig" class="defaultInput vig">
+
+      <!-- Saúde -->
+      <span id="Saude"></span>
+      <input onchange="chargeValue(this)" type="number" value="0" name="pv" class="defaultInput pv">
+      <input onchange="chargeValue(this)" type="number" value="0" name="san" class="defaultInput san">
+      <input onchange="chargeValue(this)" type="number" value="0" name="pe" class="defaultInput pe">
+      <input onchange="chargeValue(this)" type="text" value="0" name="pvSofrido" class="defaultInput pvSofrido">
+      <input onchange="chargeValue(this)" type="text" value="0" name="peGasto" class="defaultInput peGasto">
+      <input onchange="chargeValue(this)" type="text" value="0" name="sanPerdida" class="defaultInput sanPerdida">
+      
+      <!-- Defesas -->
+      <input onchange="chargeValue(this)" type="number" value="0" name="passiva" class="defaultInput passiva">
+      <input onchange="chargeValue(this)" type="number" value="0" name="equipDefesas" class="defaultInput equipDefesas">
+      <input onchange="chargeValue(this)" type="number" value="0" name="outrosDefesas" class="defaultInput outrosDefesas">
+      
+      <input onchange="chargeValue(this)" type="text" name="protecao" class="defaultInput protecao">
+      <input onchange="chargeValue(this)" type="text" name="resistencias" class="defaultInput resistencias">
+      
+      
+      
+      <!-- Pericias -->
+        <!-- Valor -->
+        <select onchange="chargeValue(this)"  type="select" name="acrobacia"  class="defaultSelect defaultInput acrobacia">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+
+        <select onchange="chargeValue(this)"  type="select" name="adestramento"  class="defaultSelect defaultInput adestramento">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+
+        <select onchange="chargeValue(this)"  type="select" name="artes"  class="defaultSelect defaultInput artes">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="atletismo"  class="defaultSelect defaultInput atletismo">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="atualidades"  class="defaultSelect defaultInput atualidades">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="ciencia"  class="defaultSelect defaultInput ciencia">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="crime"  class="defaultSelect defaultInput crime">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="diplomacia"  class="defaultSelect defaultInput diplomacia">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="enganacao"  class="defaultSelect defaultInput enganacao">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="futitude"  class="defaultSelect defaultInput futitude">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="fortividade"  class="defaultSelect defaultInput fortividade">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="iniciativa"  class="defaultSelect defaultInput iniciativa">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="intimidacao"  class="defaultSelect defaultInput intimidacao">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="intuicao"  class="defaultSelect defaultInput intuicao">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="invetigacao"  class="defaultSelect defaultInput invetigacao">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="luta"  class="defaultSelect defaultInput luta">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="meidicina"  class="defaultSelect defaultInput meidicina">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="ocultismo"  class="defaultSelect defaultInput ocultismo">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="percepcao"  class="defaultSelect defaultInput percepcao">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="pilotagem"  class="defaultSelect defaultInput pilotagem">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="pontaria"  class="defaultSelect defaultInput pontaria">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="profissao"  class="defaultSelect defaultInput profissao">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="reflexos"  class="defaultSelect defaultInput reflexos">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="religiao"  class="defaultSelect defaultInput religiao">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="sobrevivencia"  class="defaultSelect defaultInput sobrevivencia">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="tatica"  class="defaultSelect defaultInput tatica">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="tecnologia"  class="defaultSelect defaultInput tecnologia">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        <select onchange="chargeValue(this)"  type="select" name="vontade"  class="defaultSelect defaultInput vontade">
+          <option value="0" >0</option>
+          <option value="5" >5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      
+        
+        <!-- Treinado -->
+        <span id="acrobaciaT" class="defaultInput treinoPericia acrobacia">leigo</span>
+        <span id="adestramentoT" class="defaultInput treinoPericia adestramento">leigo</span>
+        <span id="artesT" class="defaultInput treinoPericia artes">leigo</span>
+        <span id="atletismoT" class="defaultInput treinoPericia atletismo">leigo</span>
+        <span id="atualidadesT" class="defaultInput treinoPericia atualidades">leigo</span>
+        <span id="cienciaT" class="defaultInput treinoPericia ciencia">leigo</span>
+        <span id="crimeT" class="defaultInput treinoPericia crime">leigo</span>
+        <span id="diplomaciaT" class="defaultInput treinoPericia diplomacia">leigo</span>
+        <span id="enganacaoT" class="defaultInput treinoPericia enganacao">leigo</span>
+        <span id="futitudeT" class="defaultInput treinoPericia futitude">leigo</span>
+        <span id="fortividadeT" class="defaultInput treinoPericia fortividade">leigo</span>
+        <span id="iniciativaT" class="defaultInput treinoPericia iniciativa">leigo</span>
+        <span id="intimidacaoT" class="defaultInput treinoPericia intimidacao">leigo</span>
+        <span id="intuicaoT" class="defaultInput treinoPericia intuicao">leigo</span>
+        <span id="invetigacaoT" class="defaultInput treinoPericia invetigacao">leigo</span>
+        <span id="lutaT" class="defaultInput treinoPericia luta">leigo</span>
+        <span id="meidicinaT" class="defaultInput treinoPericia meidicina">leigo</span>
+        <span id="ocultismoT" class="defaultInput treinoPericia ocultismo">leigo</span>
+        <span id="percepcaoT" class="defaultInput treinoPericia percepcao">leigo</span>
+        <span id="pilotagemT" class="defaultInput treinoPericia pilotagem">leigo</span>
+        <span id="pontariaT" class="defaultInput treinoPericia pontaria">leigo</span>
+        <span id="profissaoT" class="defaultInput treinoPericia profissao">leigo</span>
+        <span id="reflexosT" class="defaultInput treinoPericia reflexos">leigo</span>
+        <span id="religiaoT" class="defaultInput treinoPericia religiao">leigo</span>
+        <span id="sobrevivenciaT" class="defaultInput treinoPericia sobrevivencia">leigo</span>
+        <span id="taticaT" class="defaultInput treinoPericia tatica">leigo</span>
+        <span id="tecnologiaT" class="defaultInput treinoPericia tecnologia">leigo</span>
+        <span id="vontadeT" class="defaultInput treinoPericia vontade">leigo</span>
+
+      <!-- Armas -->
+      <span id="Armas"></span>
+        <!-- Linha 1 -->
+        <div class="line line1">
+            <input onchange="chargeValue(this)" type="text" name="arma1" class="defaultInput arma" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="ataque1" class="defaultInput ataque" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="alcance1" class="defaultInput alcance" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="dano1" class="defaultInput dano" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="critica1" class="defaultInput critica" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="especial1" class="defaultInput especial" maxlength="20">
+        </div>
+        <!-- Linha 2 -->
+        <div class="line line2">
+            <input onchange="chargeValue(this)" type="text" name="arma2" class="defaultInput arma" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="ataque2" class="defaultInput ataque" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="alcance2" class="defaultInput alcance" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="dano2" class="defaultInput dano" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="critica2" class="defaultInput critica" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="especial2" class="defaultInput especial" maxlength="20">
+        </div>
+        <!-- Linha 3 -->
+        <div class="line line3">
+            <input onchange="chargeValue(this)" type="text" name="arma3" class="defaultInput arma" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="ataque3" class="defaultInput ataque" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="alcance3" class="defaultInput alcance" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="dano3" class="defaultInput dano" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="critica3" class="defaultInput critica" maxlength="20">
+            <input onchange="chargeValue(this)" type="text" name="especial3" class="defaultInput especial" maxlength="20">
+        </div>
+        <!-- Linha 4 -->
+        <div class="line line4">
+            <input onchange="chargeValue(this)" type="text" name="arma4" class="defaultInput arma">
+            <input onchange="chargeValue(this)" type="text" name="ataque4" class="defaultInput ataque">
+            <input onchange="chargeValue(this)" type="text" name="alcance4" class="defaultInput alcance">
+            <input onchange="chargeValue(this)" type="text" name="dano4" class="defaultInput dano">
+            <input onchange="chargeValue(this)" type="text" name="critica4" class="defaultInput critica">
+            <input onchange="chargeValue(this)" type="text" name="especial4" class="defaultInput especial">
+        </div>
+        <!-- Linha 5 -->
+        <div class="line line5">
+            <input onchange="chargeValue(this)" type="text" name="arma5" class="defaultInput arma">
+            <input onchange="chargeValue(this)" type="text" name="ataque5" class="defaultInput ataque">
+            <input onchange="chargeValue(this)" type="text" name="alcance5" class="defaultInput alcance">
+            <input onchange="chargeValue(this)" type="text" name="dano5" class="defaultInput dano">
+            <input onchange="chargeValue(this)" type="text" name="critica5" class="defaultInput critica">
+            <input onchange="chargeValue(this)" type="text" name="especial5" class="defaultInput especial">
+        </div>
+    </div>
+    <div id="page2" class="ficha">
+      <img src="./img/FichaInfos.png" alt="Layout da Ficha - Pagina 2" id="fichaLayout">
+
+      <!-- Proficiências -->
+      <span id="Proficiencias"></span>
+      <textarea onchange="chargeValue(this)" name="proficiencias" class="defaultInput proficiencias"></textarea>
+
+      <!-- Habilidades -->
+      <span id="Habilidades"></span>
+      <img onclick="addHabilidade()" src="./img/addBtn.png" alt="addHabilidade" class="btn addHabilidade">
+      <div id="habilidades" class="defaultInput habilidades"></div>
+
+      <!-- Inventário -->
+      <span id="Inventario"></span>
+
+        <input onchange="chargeValue(this)" type="number" name="ptPrestigio" class="defaultInput ptPrestigio">
+        <input onchange="chargeValue(this)" type="text" name="patente" class="defaultInput patente">
+
+        <input onchange="chargeValue(this)" type="number" name="liniteNivel1" class="defaultInput liniteNivel1">
+        <input onchange="chargeValue(this)" type="number" name="liniteNivel2" class="defaultInput liniteNivel2">
+        <input onchange="chargeValue(this)" type="number" name="liniteNivel3" class="defaultInput liniteNivel3">
+        <input onchange="chargeValue(this)" type="number" name="liniteNivel4" class="defaultInput liniteNivel4">
+      
+        <input onchange="chargeValue(this)" type="text" name="credito" class="defaultInput credito">
+      
+        <!-- Ìndice -->
+        <input onchange="chargeValue(this)" value="0" type="number" name="mochilaAtual" class="defaultInput mochilaAtual">
+        <input onchange="chargeValue(this)" value="0" type="number" name="mochilaTotal" class="defaultInput mochilaTotal">
+
+        <!-- Linha 1 -->
+        <div class="line itemLine1">
+            <input onchange="chargeValue(this)" type="text" name="item1" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes1" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos1" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio1" class="defaultInput prestigio">
+        </div>
+
+        <!-- Linha 2 -->
+        <div class="line itemLine2">
+            <input onchange="chargeValue(this)" type="text" name="item2" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes2" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos2" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio2" class="defaultInput prestigio">
+        </div>
+
+        <!-- Linha 3 -->
+        <div class="line itemLine3">
+            <input onchange="chargeValue(this)" type="text" name="item3" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes3" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos3" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio3" class="defaultInput prestigio">
+        </div>
+        
+        <!-- Linha 4 -->
+        <div class="line itemLine4">
+            <input onchange="chargeValue(this)" type="text" name="item4" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes4" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos4" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio4" class="defaultInput prestigio">
+        </div>
+        
+        <!-- Linha 5 -->
+        <div class="line itemLine5">
+            <input onchange="chargeValue(this)" type="text" name="item5" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes5" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos5" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio5" class="defaultInput prestigio">
+        </div>
+        
+        <!-- Linha 6 -->
+        <div class="line itemLine6">
+            <input onchange="chargeValue(this)" type="text" name="item6" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes6" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos6" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio6" class="defaultInput prestigio">
+        </div>
+        
+        <!-- Linha 7 -->
+        <div class="line itemLine7">
+            <input onchange="chargeValue(this)" type="text" name="item7" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes7" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos7" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio7" class="defaultInput prestigio">
+        </div>
+        
+        <!-- Linha 8 -->
+        <div class="line itemLine8">
+            <input onchange="chargeValue(this)" type="text" name="item8" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes8" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos8" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio8" class="defaultInput prestigio">
+        </div>
+        
+        <!-- Linha 9 -->
+        <div class="line itemLine9">
+            <input onchange="chargeValue(this)" type="text" name="item9" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes9" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos9" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio9" class="defaultInput prestigio">
+        </div>
+        
+        <!-- Linha 10 -->
+        <div class="line itemLine10">
+            <input onchange="chargeValue(this)" type="text" name="item10" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes10" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos10" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio10" class="defaultInput prestigio">
+        </div>
+        
+        <!-- Linha 11 -->
+        <div class="line itemLine11">
+            <input onchange="chargeValue(this)" type="text" name="item11" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes11" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos11" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio11" class="defaultInput prestigio">
+        </div>
+        
+        <!-- Linha 12 -->
+        <div class="line itemLine12">
+            <input onchange="chargeValue(this)" type="text" name="item12" class="defaultInput item">
+            <input onchange="chargeValue(this)" type="text" name="detalhes12" class="defaultInput detalhes">
+            <input onchange="chargeValue(this)" type="number" name="espacos12" class="defaultInput espacos">
+            <input onchange="chargeValue(this)" type="number" name="prestigio12" class="defaultInput prestigio">
+        </div>
+
+      <!-- Notas -->
+      <span id="Notas"></span>
+      <textarea onchange="chargeValue(this)" name="notas" class="defaultInput notas"></textarea>
+
+    </div>
+    <div id="page3" class="ficha">
+      <img src="./img/FicharRituais.png" alt="Layout da Ficha - Pagina 3" id="fichaLayout">
+
+      <!-- Rituais Conhecidos -->
+      <span id="Riruais"></span>
+      <img onclick="addRituais()" src="./img/addBtn.png" alt="addRituais" class="btn addRituais">
+      <div id="rituais" class="defaultInput rituais"></div>
+
+      <!-- História -->
+      <span id="Historia"></span>
+      <textarea onchange="chargeValue(this)" name="historia" class="defaultInput historia"></textarea>
+    </div>
+  </body>
+  <script>
+    var data = {};
+
+    var sumario = true;
+    window.onload = function() {
+      var id = window.location.pathname.split("/");
+      id = id[(id.length - 1)];
+    
+      document.title = id[0].toUpperCase() + id.substring(1);
+    
+      var url = 'getFicha/' + id;
+    
+      var fun = (text, param) => {
+        data = JSON.parse(text);
+        setValues();
+      }
+    
+      systemRequest(url, fun, 'GET', null);
+    }
+
+    function sumariOpacity(){
+     var nav = document.getElementById("nav");
+      
+      if(nav.style.opacity == 0.2){
+        nav.style.opacity = 1;
+      } else{
+        nav.style.opacity = 0.2;
+      }
+     
+    }
+    
+    function sumari(){
+     var nav = document.getElementById("nav");
+     var setaimg = document.getElementById("setaimg");
+     
+     if(sumario){
+       sumario = false;
+        nav.style.right = "-215px";
+        setaimg.style.transform = "rotate(180deg)";
+     } else {
+       sumario = true;
+        nav.style.right = "-6px";
+        setaimg.style.transform = "rotate(0deg)";
+     }
+    }
+  </script>
+</html>

@@ -1,0 +1,291 @@
+/* ProficiÃƒÂªncias */
+.proficiencias{
+    top: 110px;
+    left: 71px;
+    width: 287px;
+    height: 270px;
+}
+
+/* Habilidades */
+.habilidades{
+    top: 110px;
+    left: 388px;
+    width: 298px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+}
+
+.btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    border-radius: 5px;
+    background: black;
+    border-color: black;
+}
+
+.addHabilidade{
+    top: 79px;
+    left: 652px;
+}
+
+.addHabilidade:hover {filter: invert(1);}
+
+.habilidade{
+    width: 98%;
+    height: auto;
+    margin: 2px 0px 5px;
+    border-bottom: 1.5px solid;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.escHabilidade{
+    top: -5px;
+    right: 7px;
+    filter: invert(1);
+}
+
+.escHabilidade:hover {
+    filter: none;
+}
+
+.habilidadeName{
+    position: relative;
+    width: 100%;
+}
+
+.habilidadeDescri{
+    position: static;
+    min-height: 50px !important;
+    padding: 5px 10px;
+    font-size: 10px;
+    width: 272px !important;
+}
+
+/* InventÃƒÂ¡rio */
+.mochila{
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    top: 428px;
+    left: 576px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.mochilaAtual{
+    top: 424px;
+    left: 605px;
+    width: 32px;
+    position: absolute;
+    height: 24px;
+    font-size: large;
+}
+
+.mochilaBarra{
+    margin: 0;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'texto';
+    color: white;
+    top: 1.5px;
+}
+
+.mochilaTotal{top: 424px;left: 648px;width: 32px;position: absolute;height: 24px;font-size: large;}
+
+.item{
+    width: 164px;
+    height: 20px;
+    top: 0px;
+    left: 0px;
+}
+
+.detalhes{
+    width: 276px;
+    height: 20px;
+    top: 0px;
+    left: 174px;
+}
+
+.ptPrestigio{
+    top: 387px;
+    left: 345px;
+    width: 42px;
+    height: 24px;
+}
+
+.patente{
+    top: 387px;
+    left: 444px;
+    width: 223px;
+    height: 24px;
+    padding-left: 5px;
+}
+
+.liniteNivel1{
+    top: 424px;
+    left: 126px;
+    width: 35px;
+    height: 24px;
+}
+
+.liniteNivel2{
+    top: 424px;
+    left: 175px;
+    width: 36px;
+    height: 24px;
+}
+
+.liniteNivel3{
+    top: 424px;
+    left: 225px;
+    width: 35px;
+    height: 24px;
+}
+
+.liniteNivel4{
+    top: 424px;
+    left: 274px;
+    width: 36px;
+    height: 24px;
+}
+
+.credito{
+    top: 424px;
+    left: 382px;
+    width: 170px;
+    height: 24px;
+    padding-left: 5px;
+}
+
+.espacos{
+    width: 72px;
+    height: 20px;
+    top: 0px;
+    left: 460px;
+    text-align: center;
+}
+
+.prestigio{
+    width: 64px;
+    height: 20px;
+    top: 0px;
+    left: 542px;
+    text-align: center;
+}
+
+.itemLine1{
+    position: absolute;
+    top: 477px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine2{
+    position: absolute;
+    top: 500px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine3{
+    position: absolute;
+    top: 521px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine4{
+    position: absolute;
+    top: 544px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine5{
+    position: absolute;
+    top: 565px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine6{
+    position: absolute;
+    top: 588px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine7{
+    position: absolute;
+    top: 609px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine8{
+    position: absolute;
+    top: 631px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine9{
+    position: absolute;
+    top: 652px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine10{
+    position: absolute;
+    top: 675px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine11{
+    position: absolute;
+    top: 696px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+.itemLine12{
+    position: absolute;
+    top: 717px;
+    left: 75px;
+    width: 608px;
+    height: 20px;
+}
+
+/* Notas */
+.notas{
+    top: 793px;
+    left: 72px;
+    width: 605px;
+    height: 275px;
+    padding: 2px;
+}

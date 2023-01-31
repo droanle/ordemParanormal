@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoRPG</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/padao.css">
+
+    <!-- address -->
+    <link rel="icon" href="img/icon_rpg2.png" tipo="imagem/x-ícone">
+
+    <!-- script -->
+    <script type="text/javascript" src="js/home.js"></script>
+</head>
+
+<body>
+    <br>
+    <center>
+        <h1>Seja bem vindo ao ProjetoRPG.</h1>
+        <h3>Edição exclusiva do sistema Ordem Paranormal RPG</h3>
+    </center>
+
+    <div id="perfis">
+
+    </div>
+
+    
+    <script>
+        window.onload = function() {
+
+            var url = '/getLogs';
+
+            let ajax = new XMLHttpRequest();
+
+            ajax.open('GET', url, true);
+
+            ajax.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    if (ajax.responseText != "code-416") {
+                      var res = JSON.parse(ajax.responseText);
+                      for (i=0; i < res.length; i++) {
+                        name = res[i]
+
+                        var content = '<a class="perfil" href="/' + name + '">';
+                            content += '<div class="nome">';
+                            content += '<p>Ficha do(a) ' + name[0].toUpperCase() + name.substring(1) + '</p>';
+                            content += '</div>';
+                            content += '</a>';
+
+                        document.getElementById("perfis").innerHTML += content;
+                            
+                      }
+                    }
+                }
+            }
+
+            ajax.send();
+        }
+    </script>
+
+</body>
